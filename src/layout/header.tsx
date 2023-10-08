@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "./header.scss"
 export default function Header() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-primary  pt-0 mb-1">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="">
+          <Link className="navbar-brand link" to="">
             Navbar
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler "
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -24,15 +24,15 @@ export default function Header() {
             className="collapse navbar-collapse "
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+            <ul className="navbar-nav ms-auto  me-4">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to={""}>
-                  Home
+                <Link className="nav-link link" aria-current="page" to={""}>
+                 <span className="span">Home</span> 
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link active"
+                  className="nav-link  link"
                   aria-current="page"
                   to={"about"}
                 >
@@ -41,7 +41,7 @@ export default function Header() {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link active"
+                  className="nav-link  link"
                   aria-current="page"
                   to={"artist"}
                 >
@@ -50,7 +50,7 @@ export default function Header() {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link active"
+                  className="nav-link  link"
                   aria-current="page"
                   to={"contact"}
                 >

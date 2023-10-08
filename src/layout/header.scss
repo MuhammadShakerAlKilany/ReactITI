@@ -1,0 +1,24 @@
+.link{
+   position: relative;
+   & .span{
+    z-index: 10 !important;
+   }
+   &::before{
+       content: "";
+       height: 0%;
+       width: 100%;
+       top: 0;
+       left: 0;
+        background-color: blueviolet;
+        transition-duration: .2s;
+        position: absolute;
+        
+   }
+    &:hover{
+        &#{&}::before{
+            height: 10%;
+           
+        }
+    }
+
+}

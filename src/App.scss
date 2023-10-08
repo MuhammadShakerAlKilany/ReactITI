@@ -1,3 +1,6 @@
+* {
+  color: aliceblue !important;
+}
 .App {
   text-align: center;
 }
@@ -5,6 +8,9 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.title {
+  color: rgba(223, 223, 67, 0.788) !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -36,3 +42,8 @@
     transform: rotate(360deg);
   }
 }
+$theme-colors: (
+  "primary": rgb(44, 0, 71),
+  "secondary": rgba(223, 223, 67, 0.788),
+);
+@import "bootstrap/scss/bootstrap";
