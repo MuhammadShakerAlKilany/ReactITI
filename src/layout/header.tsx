@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./header.scss"
+import "./header.scss";
+
+import navImg from "../img/header-logo.png";
 export default function Header() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-primary  pt-0 mb-1">
+      <nav className="navbar navbar-expand-lg navbar-light bg-primary  pt-0 mb-1" style={{fontSize:"2rem"}}>
         <div className="container-fluid">
-          <Link className="navbar-brand link" to="">
-            Navbar
+          <Link className="navbar-brand " to="">
+            <img src={navImg} style={{height:"3.5rem"}} />
           </Link>
           <button
             className="navbar-toggler "
@@ -27,7 +29,7 @@ export default function Header() {
             <ul className="navbar-nav ms-auto  me-4">
               <li className="nav-item">
                 <Link className="nav-link link" aria-current="page" to={""}>
-                 <span className="span">Home</span> 
+                  <span className="span">Home</span>
                 </Link>
               </li>
               <li className="nav-item">

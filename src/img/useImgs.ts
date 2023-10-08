@@ -9,7 +9,7 @@ function useImgs(){
     imageList.forEach((img:string) => {
      const key = img.toString().split(".")[0].split("/")[3]
       imgs[key]=img
-      console.log(img.toString().split(".")[0].split("/")[3])
+      
     });
     return imgs
 }
