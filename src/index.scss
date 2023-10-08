@@ -12,11 +12,4 @@ code {
     monospace;
 }
 
-$theme-colors: (
-  'primary': tomato,
-  'secondary': teal,
-  "add-butt":rgb(229, 255, 0),
-  "danger":rgb(233, 39, 39)
-);
-
-@import '~bootstrap/scss/bootstrap';
+@import "bootstrap/dist/css/bootstrap.min.css";
